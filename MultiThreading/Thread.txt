@@ -40,3 +40,7 @@ available thread2 or other threads cant access the resources. Main thread will b
 
 E.g : Lock will ask wait for 1000 ms, but transaction is taking more than this, then thread2 will not wait for that, without thread2
 the Main thread will get finished.
+
+1. lock.lock() -> thread will wait until its get lock
+2. lock.tryLock() -> try once and go
+3. lock.unlock() -> unlock the lock
