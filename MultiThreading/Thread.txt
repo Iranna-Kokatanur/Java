@@ -44,3 +44,6 @@ the Main thread will get finished.
 1. lock.lock() -> thread will wait until its get lock
 2. lock.tryLock() -> try once and go
 3. lock.unlock() -> unlock the lock
+
+Reentrant lock -> Current thread can lock itself again more than once (Deadlock occurs - Means the current threads depends on something
+to get unlock but the dependent depend on the the one which is waiting for it)
