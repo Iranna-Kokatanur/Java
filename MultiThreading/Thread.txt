@@ -33,5 +33,10 @@ Locks:
 Locking is the method to lock the thread when the multiple threads are using the same resources so that one thread can access the resources later other will.
 
 Intransic: These are inbuilt on java objects. used by adding synchronized key word. Here we dont have control on lock.
+Here thread will wait for one to finish and executed later.
 
-Explicit:  It is exlplicit by java.util.concurrent.lock. Where you can lock the specified thread you want.
+Explicit:  It is exlplicit by java.util.concurrent.lock. Where you can lock the specified thread you want. Here if the lock is not
+available thread2 or other threads cant access the resources. Main thread will be completed without other threads.
+
+E.g : Lock will ask wait for 1000 ms, but transaction is taking more than this, then thread2 will not wait for that, without thread2
+the Main thread will get finished.
