@@ -27,3 +27,11 @@ is getting modified or accessed make that method or block of code as synchronize
 The condition which is making the soln/ans different is raised condition (solved by synchronized). 
 
 Mutual Exclusion
+
+Locks:
+
+Locking is the method to lock the thread when the multiple threads are using the same resources so that one thread can access the resources later other will.
+
+Intransic: These are inbuilt on java objects. used by adding synchronized key word. Here we dont have control on lock.
+
+Explicit:  It is exlplicit by java.util.concurrent.lock. Where you can lock the specified thread you want.
