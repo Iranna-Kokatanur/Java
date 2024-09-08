@@ -10,3 +10,20 @@ Thread Life Cycle:
 4. Blocked/Waiting - A thread is in this state when it is waiting for a
    resource or for another thread to perform an action.
 5. Terminated - A thread is in state when it has finished executing.
+
+Thread methods:
+
+start run sleep join setPriority interrupt yield setDaemon
+
+//JVM will not wait for daemon (background threads) 
+
+// means if other threads is completed then i will not wait
+
+Synchronization:
+
+When multiple threading using the same resources, result will be wrong. Then look for the method where the object or resource
+is getting modified or accessed make that method or block of code as synchronized so that one thread can use at that time. The part of the program that you are making synchronized is critical section .
+
+The condition which is making the soln/ans different is raised condition (solved by synchronized). 
+
+Mutual Exclusion
