@@ -1,0 +1,12 @@
+1.Start thread by extending thread and override the run method
+2.Start thread by implementing runnable interface and override the run method.
+
+Thread Life Cycle:
+
+1. New - A thread is in this state when it is created but not yet started.
+2. Runnable - After the start method is called, the thread becomes runnable.
+   It's ready to run and is waiting for CPU time.
+3. Running - The thread is in this state when it is executing.
+4. Blocked/Waiting - A thread is in this state when it is waiting for a
+   resource or for another thread to perform an action.
+5. Terminated - A thread is in state when it has finished executing.
