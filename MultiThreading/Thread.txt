@@ -1,3 +1,7 @@
+NOTES:
+
+https://engineeringdigest.medium.com/multithreading-in-java-39f34724bbf6
+
 1.Start thread by extending thread and override the run method
 2.Start thread by implementing runnable interface and override the run method.
 
