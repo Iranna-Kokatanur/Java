@@ -47,3 +47,24 @@ the Main thread will get finished.
 
 Reentrant lock -> Current thread can lock itself again more than once (Deadlock occurs - Means the current threads depends on something
 to get unlock but the dependent depend on the the one which is waiting for it)
+
+Fairness of lock -> Any thread can get a chance to execute first, there is like ordering -> achieved by passing true in reetrantlock.
+
+Read write lock ->
+//Multiple threads can acquire the read lock until any other not require the write lock		
+// Multiple threads no need to wait for read locks, until any other thread acquire the write lock 
+// because they will communicate each other
+
+Deadlock:
+
+This is the situation in multithreading where two or more threads are blocked forever, waiting for each other to release a resource.
+This typically occurs when two or more threads have circular dependency on a set of locks.
+
+Deadlocks typically occurs when 4 conditions are met simulteneously:
+
+1. Mutual Exclusion: Only one thread can access a resource at a time.
+2. Hold and wait: A thread holding atleast one resource is waiting to acquire resources held by other threads.
+3. No preemption: Resources cannot be forcibly taken from threads holding them.
+4. Circular wait: A set of threads of waiting for each other in a circular chain.
+
+
