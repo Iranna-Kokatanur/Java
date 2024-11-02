@@ -122,5 +122,7 @@ And other statements also will not wait until you add executor.awaitTermination(
 
 means it will wait for 1 second to complete executor Service, if it is not complete other statements will execute
 
+//Callable and Runnable are kind of same, but in callable case it will return but in runnable no return
 
+//executorService.submit(callable) as parameter will take the callable task as default, otherwise you have to specify runnable or callable
 
