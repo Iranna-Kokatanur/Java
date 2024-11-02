@@ -84,4 +84,11 @@ Example: producer will produce the data when there is no data and notify to the 
 
 notifyAll for more threads
 
+Lamda Expressions:
+
+// Functional interface which have single abstract method so, we can use lamda expressions to write simpler codes
+
+Interface intefacename = (input) -> return statement;
+
+// Same we can try for RUnnable interface also as it has only one abstract method
 
