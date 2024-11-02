@@ -126,3 +126,6 @@ means it will wait for 1 second to complete executor Service, if it is not compl
 
 //executorService.submit(callable) as parameter will take the callable task as default, otherwise you have to specify runnable or callable
 
+Callable has method called call() which will return something and having throws Exception
+
+Runnable has method called run() which will not return anything and don't have throws Exception
