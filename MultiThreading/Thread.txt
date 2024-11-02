@@ -147,4 +147,6 @@ Future:
 2. .get(Time)
 3. .isDone()
 4. isCancelled()
+5. .cancel(false or true)
+
 
