@@ -129,3 +129,22 @@ means it will wait for 1 second to complete executor Service, if it is not compl
 Callable has method called call() which will return something and having throws Exception
 
 Runnable has method called run() which will not return anything and don't have throws Exception
+
+ExecutorService Methods:
+
+1. .submit(callable)
+2. .submit(runnable)
+3. .submit(runnable, result) -> here result upon successful completion as runnable will not return anything
+4. .shutdown()
+5.  .shutdownnow()
+6. .awaitTermination()
+7. isShutDown()
+8. isTerminated()
+
+Future:
+
+1. .get()
+2. .get(Time)
+3. .isDone()
+4. isCancelled()
+
