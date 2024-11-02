@@ -72,3 +72,16 @@ Deadlocks typically occurs when 4 conditions are met simulteneously:
 4. Circular wait: A set of threads of waiting for each other in a circular chain.
 
 
+Thread communication:
+
+In am multithreaded environment, threads often need to communicate and coordinate with each other to accomplish a task.
+Without proper communication mechanisms, threads might end up in  inefficient busy-waiting states, leading to wastage of CPU resources
+and potencial deadlocks.
+
+wait, notify, notifyall
+
+Example: producer will produce the data when there is no data and notify to the other thread, if there is already a data it will wait for other thread to consume the data. reverse case in consumer
+
+notifyAll for more threads
+
+
