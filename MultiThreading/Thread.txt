@@ -168,5 +168,10 @@ Cyclic Barrier:
 
 * countdownlatch you can't reuse but we can reuse cyclicbarrier
 
-CompatibleFeature:
+CompelableFeature:
 
+To handle the request asynchronously, java 8 introduced CompletableFeature, where you can do your supply or task
+and perform it. It is demon thread (not waited by main thread). you have to do .get() or .join() to get wait by main thread.
+
+
+You can created multiple completable feature and combine them to form new completablefeature
